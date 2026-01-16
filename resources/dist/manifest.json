@@ -1,0 +1,17 @@
+{
+  "resources/css/lopi.css": {
+    "file": "lopi.css",
+    "src": "resources/css/lopi.css",
+    "isEntry": true,
+    "name": "lopi",
+    "names": [
+      "lopi.css"
+    ]
+  },
+  "resources/js/lopi.js": {
+    "file": "lopi.js",
+    "name": "lopi",
+    "src": "resources/js/lopi.js",
+    "isEntry": true
+  }
+}
