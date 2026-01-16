@@ -17,3 +17,4 @@ phpunit.xml
 !phpunit.*.xml
 /tests/**/Screenshots
 /composer.lock
+/template

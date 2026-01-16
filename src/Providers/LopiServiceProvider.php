@@ -36,6 +36,10 @@ class LopiServiceProvider extends PackageServiceProvider
             $this->publishes([
                 __DIR__ . '/../../resources/views' => resource_path('views/vendor/lopi'),
             ], 'lopi-views');
+
+            $this->publishes([
+                __DIR__ . '/../../resources/assets' => public_path('vendor/lopi'),
+            ], 'lopi-assets');
         }
 
         $this->app->make('lopi')->discover();
