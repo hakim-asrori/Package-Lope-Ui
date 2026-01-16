@@ -24,7 +24,9 @@ class LopiServiceProvider extends PackageServiceProvider
 
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'lopi  ');
+        parent::boot();
+
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'lopi');
 
         $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
 
