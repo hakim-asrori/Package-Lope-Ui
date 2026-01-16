@@ -16,3 +16,4 @@ phpunit.xml
 .env.testing
 !phpunit.*.xml
 /tests/**/Screenshots
+/composer.lock
