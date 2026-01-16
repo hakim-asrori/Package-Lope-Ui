@@ -47,6 +47,6 @@ class LopiServiceProvider extends PackageServiceProvider
 
     protected function registerBladeComponents()
     {
-        // Blade::component('lopi::index', 'lopi-index');
+        Blade::component('lopi::index', 'lopi-index');
     }
 }
