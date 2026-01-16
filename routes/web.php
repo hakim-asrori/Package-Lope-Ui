@@ -3,8 +3,8 @@
 use HakimAsrori\Lopi\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix(config('path'))
-    ->middleware(config('auth.middlewares'))
+Route::prefix(config('lopi.path'))
+    ->middleware(config('lopi.auth.middlewares'))
     ->group(function () {
         Route::get('/', [DashboardController::class, 'index'])->name('lopi.index');
 
