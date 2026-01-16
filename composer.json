@@ -1,0 +1,31 @@
+{
+    "name": "hakim-asrori/lopi",
+    "description": "A collection of full-stack components for accelerated Laravel development.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HakimAsrori\\Lopi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hakim-asrori",
+            "email": "saneglos005@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "10.x-dev"
+    },
+    "require": {
+        "spatie/laravel-package-tools": "dev-main"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HakimAsrori\\Lopi\\Providers\\LopiServiceProvider"
+            ]
+        }
+    }
+}
