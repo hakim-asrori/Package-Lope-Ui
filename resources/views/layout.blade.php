@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
-    <link rel="stylesheet" href="{{ route('lopi.assets', 'css/lopi.css') }}">
-    <script src="{{ route('lopi.assets', 'js/lopi.js') }}"></script>
+    <link rel="stylesheet" href="{{ route('lopi.assets', 'lopi.css') }}">
+    <script src="{{ route('lopi.assets', 'lopi.js') }}"></script>
 </head>
 
 <body>
