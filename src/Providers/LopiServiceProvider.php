@@ -15,6 +15,8 @@ class LopiServiceProvider extends PackageServiceProvider
         $this->app->singleton('lopi', function ($app) {
             return new LopiManager($app);
         });
+
+        $this->app->register(LopiComponentProvider::class);
     }
 
     public function configurePackage(Package $package): void
@@ -45,12 +47,5 @@ class LopiServiceProvider extends PackageServiceProvider
         $this->app->make('lopi')->discover();
 
         view()->share('lopi', $this->app->make('lopi'));
-
-        $this->registerBladeComponents();
-    }
-
-    protected function registerBladeComponents()
-    {
-        Blade::component('lopi::index', 'lopi-index');
     }
 }
